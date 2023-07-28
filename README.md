@@ -19,6 +19,10 @@
     git add .
     git commit -m "Initial commit"
 
+Назовем текущую ветку *new_feature*
+
+    git branch -m new_feature
+
 #### 2.
 Создадим на GitHub удаленный репозитарий. Укажем в нем создание файла README.md  [https://github.com/Zep314/dz_git1.git](https://github.com/Zep314/dz_git1.git)
 
@@ -27,25 +31,16 @@
 
     git remote add origin git@github.com:Zep314/dz_git1.git
 
-Пробуем отправить изменения локальной версии на удаленный GiHub
+Отправляем изменения локальной версии на удаленный GiHub
 
-    git push -u origin main
+    git push -u origin new_feature
 
-Получаем ошибку:
-    
-     ! [rejected]        main -> main (fetch first)
-    error: failed to push some refs to 'github.com:Zep314/dz_git1.git'
-    hint: Updates were rejected because the remote contains work that you do
-    hint: not have locally. This is usually caused by another repository pushing
-    hint: to the same ref. You may want to first integrate the remote changes
-    hint: (e.g., 'git pull ...') before pushing again.
-    hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-
-Скачаем удаленный репозитарий
+Скачиваем с удаленного репозитария недостающую ветку проекта
 
     git fetch
 
-После - посмотрим разницу, в каких файлах есть различия:
+Смотрим, в каких файлах имеются какие изменения
 
-    git diff <<HASH>>
+    git diff
+
 
