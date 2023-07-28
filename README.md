@@ -47,7 +47,8 @@
 Пробуем переключиться на ветку *main*
 
     git checkout main
-    Switched to a new branch 'main'                                                              branch 'main' set up to track 'origin/main'. 
+    Switched to a new branch 'main'
+    branch 'main' set up to track 'origin/main'. 
 
 Пробуем слить обе ветки вместе
 
@@ -93,3 +94,4 @@ Git сообщает нам о конфликте в файле *README.md*. С�
 
     git push
 
+Работа завершена.
